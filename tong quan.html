@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #titleBar {
+            width: 100%;
+            background-color: #CDAF95;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #content {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        #leftColumn {
+            width: 400px;
+            height: 80vh; /* Adjust height as needed */
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto; /* Add vertical scroll bar when needed */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+            width: calc(100% - 400px); /* Adjust width considering left column width */
+            overflow: hidden;
+        }
+        #autoScaleImage {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="titleBar">
+        <h1>Danh Sách Mô Hình 3D Mô Phỏng</h1>
+    </div>
+    <div id="content">
+        <div id="leftColumn">
+            <h2>Danh Sách Các Địa Điểm</h2>
+            <p><a href="Bệnh viện Đa khoa tỉnh Bình Phước/Benh vien Da khoa tinh Binh Phuoc.html">1. Bệnh viện Đa khoa tỉnh Bình Phước</a></p>
+            <p><a href="Tượng Đài chiên thắng Đồng Xoài/Tuong dai Chien Thang.html">2. Tượng Đài chiến thắng Đồng Xoài</a></p>
+            <p><a href="Bệnh viện Hoàn Mỹ Bình Phước/Benh vien Hoan My Binh Phuoc.html">3. Bệnh viện Hoàn Mỹ Bình Phước</a></p>
+            <p><a href="Trung Tâm Hoạt Động Thanh Thiếu Nhi Tỉnh Bình Phước/TrungTamHoatDongThanhThieuNhiTinhBinhPhuoc.html">4. Trung Tâm Hoạt Động Thanh Thiếu Nhi Tỉnh Bình Phước</a></p>
+            <p><a href="Chợ Đêm - Công Viên Kỳ Quan - Cát Tường Phú Hưng/ChoDem.html">5. Chợ Đêm - Công Viên Kỳ Quan - Cát Tường Phú Hưng</a></p>
+            <p><a href="Nghĩa trang Liệt sĩ Bình Phước/NghiatrangLietsiBinhPhuoc.html">6. Nghĩa trang Liệt sĩ Bình Phước</a></p>
+            <p><a href="Sở Giao Thông Vận Tải Tỉnh Bình Phước/SoGiaoThongVanTaiTinhBinhPhuoc.html">7. Sở Giao Thông Vận Tải Tỉnh Bình Phước</a></p>
+            <p><a href="Kho bạc Nhà nước tỉnh Bình Phước/KhobacNhanuoctinhBinhPhuoc.html">8. Kho Bạc Nhà Nước Tỉnh Bình Phước</a></p>
+            <p><a href="Sở Tài nguyên & Môi trường tỉnh Bình Phước/SoTainguyen&MoitruongtinhBinhPhuoc.html">9. Sở Tài Nguyên & Môi Trường Tỉnh Bình Phước</a></p>
+            <p><a href="Thanh tra Sở GTVT tỉnh Bình Phước/ThanhTraSoGTVTtinhBinhPhuoc.html">10. Thanh Tra Sở GTVT Tỉnh Bình Phước</a></p>
+            <p><a href="Tòa án nhân dân tỉnh Bình Phước/ToaannhandantinhBinhPhuoc.html">11. Tòa Án Nhân Dân Tỉnh Bình Phước</a></p>
+            <p><a href="Trung Tâm Phục vụ Hành Chính Công tỉnh/TrungTamPhucvuHanhChinhCongtinh.html">12. Trung Tâm Phục vụ Hành Chính Công Tỉnh</a></p>
+            <p><a href="UBND tỉnh Bình Phước + Tỉnh Ủy Bình Phước + Hội trường tỉnh/UBNDTinhuyHoitruongtinh.html">13. Cụm Khu UBND Tỉnh + Hội Trường Tỉnh + Tỉnh Ủy Bình Phước</a></p>
+            <p><a href="Viện kiểm sát nhân dân tỉnh Bình Phước/VienkiemsatnhandantinhBinhPhuoc.html">14. Viện kiểm sát nhân dân tỉnh Bình Phước</a></p>
+            <p><a href="Phòng Cảnh sát PCCC&CHCN - Công an tỉnh Bình Phước/PCCCTinhBinhPhuoc.html">15. Phòng Cảnh sát PCCC&CHCN Tỉnh Bình Phước</a></p>
+            <p><a href="Ủy Ban Mặt Trận Tổ Quốc Tỉnh Bình Phước/UyBanMatTranToQuocTinhBinhPhuoc.html">16. Ủy Ban Mặt Trận Tổ Quốc Tỉnh Bình Phước</a></p>
+            <p><a href="Bảo hiểm xã hội tỉnh Bình Phước/Bao hiem xa hoi tinh Binh Phuoc.html">17. Bảo hiểm xã hội tỉnh Bình Phước</a></p>
+            <p><a href="Trung tâm dịch vụ việc làm tỉnh Bình Phước/Trung tâm dịch vụ việc làm tỉnh Bình Phước.html">18. Trung tâm dịch vụ việc làm tỉnh Bình Phước</a></p>
+            <p><a href="Trung tâm Xúc tiến đầu tư Thương mại và du lịch tỉnh Bình Phước/Trung tam Xuc tien dau tu Thuong mai va du lich tinh Binh Phuoc.html">19. Trung tâm Xúc tiến đầu tư Thương mại và du lịch tỉnh Bình Phước</a></p>
+            <p><a href="Trung Tâm Thể Dục Thể Thao Tỉnh Bình Phước + sân vận động +  nhà thi đấu tỉnh Bình Phước/tongkhu.html">20. Trung Tâm Thể Dục Thể Thao Tỉnh Bình Phước + sân vận động +  nhà thi đấu tỉnh Bình Phước</a></p>
+            <p><a href="Đoàn ca múa nhạc tỉnh Bình Phước/DoancamuanhactinhBinhPhuoc_cinema.html">21. Đoàn ca múa nhạc tỉnh Bình Phước</a></p>
+            <p><a href="Viện kiểm sát nhân dân thành phố Đồng Xoài/Vien kiem sat nhan dan thanh pho Dong Xoai.html">22. Viện kiểm sát nhân dân thành phố Đồng Xoài</a></p>
+            <p><a href="Trường Tiểu Học Tân Phú B/Truong Tieu Hoc Tan Phu B.html">23. Trường Tiểu Học Tân Phú B</a></p>
+            <p><a href="Ngân hàng BIDV Bình Phước/Ngan hang BIDV Binh Phuoc.html">24. Ngân hàng BIDV Bình Phước</a></p>
+            <p><a href="Ngân Hàng Nhà Nước Việt Nam/Ngan Hang Nha Nuoc Viet Nam.html">25. Ngân Hàng Nhà Nước Việt Nam</a></p>
+            <p><a href="Ngân hàng Agribank tỉnh Bình Phước/NHAgribankBinhPhuoc.html">26. Ngân Hàng Agribank tỉnh Bình Phước</a></p>
+            <p><a href="Ngân hàng Vietcombank tỉnh Bình Phước/Ngan hang Vietcombank tinh Binh Phuoc.html">27. Ngân hàng Vietcombank tỉnh Bình Phước</a></p>
+            <p><a href="Ngân hàng Viettinbank tỉnh Bình Phước/Ngan hang Viettinbank tinh Binh Phuoc.html">28. Ngân hàng Viettinbank tỉnh Bình Phước</a></p>
+            <p><a href="Ngân hàng Á Châu CN Bình Phước/Ngan hang A Chau CN Binh Phuoc.html">29. Ngân hàng Á Châu Tỉnh Bình Phước</a></p>
+            <p><a href="Cụm Khu UBND+Thành Ủy+Liên Đoàn Lao Động+Thành Đoàn Thành Phố Đồng Xoài/Tongkhu.html">30. Cụm Khu UBND+Thành Ủy+Liên Đoàn Lao Động+Thành Đoàn Thành Phố Đồng Xoài</a></p>
+            <p><a href="Sở Tài Chính/So Tai Chinh.html">31. Sở Tài Chính</a></p>
+            <p><a href="Trường Tiểu Học Tân Bình B/Truong tieu hoc Tan Binh B.html">32. Trường Tiểu Học Tân Bình B</a></p>
+            <p><a href="Liên Đoàn Lao Động Tỉnh Bình Phước/liendoanlaodong.html">33. Liên Đoàn Lao Động Tỉnh Bình Phước</a></p>
+            <p><a href="Trường Tiểu Học Tiến Hưng A/Truong tieu hoc tien hung A.html">34. Trường Tiểu Học Tiến Hưng A</a></p>
+            <p><a href="Quảng Trường Thành Phố Đồng Xoài/Quang Truong Thanh Pho.html">35. Quảng Trường Thành Phố Đồng Xoài</a></p>
+        </div>
+        <div class="image-container">
+            <img id="autoScaleImage" src="anh.jpg" alt="Auto Scaled Image">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('resize', autoScaleImage);
+
+        function autoScaleImage() {
+            const img = document.getElementById('autoScaleImage');
+            const container = document.querySelector('.image-container');
+            const containerAspectRatio = container.clientWidth / container.clientHeight;
+            const imgAspectRatio = img.naturalWidth / img.naturalHeight;
+
+            if (imgAspectRatio > containerAspectRatio) {
+                img.style.width = '100%';
+                img.style.height = 'auto';
+            } else {
+                img.style.width = 'auto';
+                img.style.height = '100%';
+            }
+        }
+
+        // Initial call to set image size
+        autoScaleImage();
+    </script>
+</body>
+</html>
